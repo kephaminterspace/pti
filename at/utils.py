@@ -33,7 +33,8 @@ def select_box_by_list_disabled(list=None, selected="", name="", id="", cls="", 
     return results
 
 def select_box_by_list(list=None, selected="", name="", id="", cls="", style="", first_option_text=""):
-    results = '<select name="'+name+'" id="'+id+'" class="'+cls+'" style="'+style+'" required oninvalid="setCustomValidity(\'Lựa chọn là bắt buộc\')" oninput="setCustomValidity(\'\')">'
+    required_text = first_option_text+ ' là bắt buộc'
+    results = '<select name="'+name+'" id="'+id+'" class="'+cls+'" style="'+style+'" required oninvalid="setCustomValidity(\''+required_text+'\')" oninput="setCustomValidity(\'\')">'
     if first_option_text:
         results += '<option value=''> '+first_option_text+' </option>'
     if list:
@@ -47,14 +48,22 @@ def select_box_by_list(list=None, selected="", name="", id="", cls="", style="",
     return results
 
 # Constant
-REGION=[
-    (1,u"Hà Nội"),
-    (2,u"Thành phố Hồ Chí Minh"),
-    (3,u"Bình Dương")
+LEVEL_INSURRANCE=[
+    (1,u"110 Triệu"),
+    (2,u"220 Triệu"),
+    (3,u"330 Triệu")
 ]
 
-CAOCH=[
-    (1,u'Trên 10 triệu VNĐ'),
-    (2,u'Trên 30 triệu VNĐ')
+NUMBER_PERSION=[
+    (1, u'1 Người'),
+    (2, u'2 Người'),
+    (3, u'3 Người'),
+    (4, u'4 Người'),
+    (5, u'5 Người'),
+    (6, u'6 Người'),
+    (7, u'7 Người'),
+    (8, u'8 Người'),
+    (9, u'9 Người'),
+    (10, u'10 Người')
 ]
 

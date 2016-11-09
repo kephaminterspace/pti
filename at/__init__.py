@@ -25,32 +25,26 @@ def static_from_root():
 @app.route("/", methods=['POST', 'GET'])
 def index():
     form = BankForm()
-    if form.luong.data not in ["yes", "no"]:
-	form.luong.data = ''
-    slbox_region = select_box_by_list(REGION, form.region.data, 'region', 'region', 'form-control styled', '',
-                                      'Thành phố bạn sinh sống')
-    slbox_caoch = select_box_by_list(CAOCH, form.caoch.data, 'caoch', 'caoch', 'form-control styled', '',
-                                      'Mức lương chuyển khoản hàng tháng ?')
+    slbox_level_insurrance = select_box_by_list(LEVEL_INSURRANCE, form.level_insurrance.data, 'level_insurrance', 'level_insurrance', 'form-control styled', '',
+                                      'Chọn mức bảo hiểm')
+    slbox_number_persion = select_box_by_list(NUMBER_PERSION, form.number_persion.data, 'number_persion', 'number_persion', 'form-control styled', '',
+                                      'Số lượng người tham gia')
+
+    print()
 
     if request.method == 'POST':
         if form.validate_on_submit():
-
-            salary_method = "CASH_IN_HAND"
-            if form.luong.data == "yes":
-                salary_method = "BANK_TRANSFER"
-
             data = {
                 "properties": [
                     {"property":"identifier", "value":str(uuid.uuid4())},
                     {"property":"firstname", "value":form.name.data},
                     {"property":"lastname", "value":""},
-                    {"property":"email", "value":form.email.data},
+                    {"property":"email", "value":str(uuid.uuid4())+'@interspace.vn'},
                     {"property":"phone", "value":form.phone.data},
                     {"property":"hs_lead_status", "value":"NEW"},
-                    {"property":"region", "value": int(form.region.data)},
-                    {"property":"birthday", "value": form.birthday.data},
-                    {"property":"salary_payment_method", "value":salary_method},
-                    {"property":"monthly_income_level", "value":int(form.caoch.data)},
+                    {"property":"level_insurrance", "value": int(form.level_insurrance.data)},
+                    {"property":"code_promotion", "value": form.code_promotion.data},
+                    {"property":"number_persion", "value":int(form.number_persion.data)},
                     {"property":"aff_source", "value":form.aff_source.data},
                     {"property":"aff_sid", "value":form.aff_sid.data},
                 ]
@@ -69,16 +63,20 @@ def index():
                     else:
                         form.email.errors.append(res_json["message"])
 
-                    return render_template('index.html', form=form, slbox_region=slbox_region, slbox_caoch=slbox_caoch)
+                        return render_template('index.html', form=form, slbox_level_insurrance=slbox_level_insurrance,
+                                               slbox_number_persion=slbox_number_persion)
                 else:
                     return render_template('thankyou.html')
 
             form.email.errors.append("Invalid data!")
-            return render_template('index.html', form=form, slbox_region=slbox_region, slbox_caoch=slbox_caoch)
+            return render_template('index.html', form=form, slbox_level_insurrance=slbox_level_insurrance,
+                                   slbox_number_persion=slbox_number_persion)
 
         else:
-            return render_template('index.html', form=form, slbox_region=slbox_region, slbox_caoch=slbox_caoch)
+            return render_template('index.html', form=form, slbox_level_insurrance=slbox_level_insurrance,
+                                   slbox_number_persion=slbox_number_persion)
 
-    return render_template('index.html', form=form, slbox_region=slbox_region, slbox_caoch=slbox_caoch)
+    return render_template('index.html', form=form, slbox_level_insurrance=slbox_level_insurrance,
+                               slbox_number_persion=slbox_number_persion)
 
 
