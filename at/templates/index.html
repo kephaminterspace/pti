@@ -71,7 +71,7 @@
                             {{ form.hidden_tag() }}
                              {% for field in form if field.widget.input_type != 'hidden' %}
                                 {% if field.errors %}
-                                    <div class="loading alert"><a class="close" data-dismiss="alert">×</a>
+                                    <div class="loading alert" style="color: red;"><a class="close" data-dismiss="alert">×</a>
                                     {%for error in field.errors%}
                                             {{error}}</br>
                                         {%endfor%}
