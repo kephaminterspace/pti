@@ -1102,10 +1102,10 @@ img {
 }
 
 .reg-now {
-    position: absolute;
-    right: 0;
-    top: 80px;
-    width: 450px;
+    /*position: absolute;*/
+    /*right: 0;*/
+    /*top: 80px;*/
+    /*width: 450px;*/
     padding: 30px 20px;
     background: rgba(0, 0, 0, 0.3);
     /*border-top: 5px solid #21aa47;*/
@@ -4197,10 +4197,10 @@ ul.u2 li.li6 {
     margin-bottom: 10px;
 }
 
-.sec-title.has-bg {
+/*.sec-title.has-bg {
     background: url(../images/t-bg.png) no-repeat;
     padding: 15px 15px 0px 15px;
-}
+}*/
 
 .sec-title h3 {
     font-size: 18px;
@@ -4289,13 +4289,13 @@ ul.u2 li.li6 {
     text-transform: uppercase;
 }
 
-.footer .container{
+.footer{
     border-top: 4px solid #CBCBCB;
 }
 
-.navbar-brand {
+/*.navbar-brand {
     padding: 0px;
-}
+}*/
 
 .navbar-right ul li {
     float: left;
