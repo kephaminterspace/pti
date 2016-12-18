@@ -2344,7 +2344,6 @@ span.customSelect {
     display: block;
     font-family: arial;
     font-size: 13px;
-    text-align: center;
 }
 
 .come-in {
@@ -3594,7 +3593,6 @@ ul.u2 li.li6 {
 .copyright {
     color: #333;
     padding: 10px 0px;
-    text-transform: uppercase;
 }
 
 .excerpt:hover .cash2,
@@ -4321,3 +4319,20 @@ ul.u2 li.li6 {
 .navbar-collapse.collapse{
     padding-top:10px;
 }
+
+
+
+.row{
+    margin-top:40px;
+    padding: 0 10px;
+}
+
+.clickable{
+    cursor: pointer;
+}
+
+.panel-heading span{
+	margin-top: -20px;
+	font-size: 15px;
+}
+

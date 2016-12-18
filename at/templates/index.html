@@ -48,6 +48,10 @@
                         <li class="nav_click" id="bao_hiem">
                             <a href="javascript:void(0)"   >PHÍ BÀO HIỂM</a>
                         </li>
+                        <li class="nav_click" id="cou_hoi_thuong_gap">
+                            <a href="javascript:void(0)"   >Câu hỏi thường gặp</a>
+                        </li>
+
                         <li class="nav_click" id="thong_tin">
                             <a href="javascript:void(0)"   >THÔNG TIN CẦN BIẾT</a>
                         </li>
@@ -95,7 +99,7 @@
                             </div>
 
                             <div class='control-group'>
-                                <input type="text" name="code_promotion" value={%if form.data.code_promotion%} "{{form.data.code_promotion|safe}}" {%else%} "" {%endif%} placeholder='Mã khuyến mại'/>
+                                <input type="text" name="code_promotion" value={%if form.data.code_promotion%} "{{form.data.code_promotion|safe}}" {%else%} "" {%endif%} placeholder='Mã xác thực'/>
                             </div>
                             <p>
                                   {%if form.toidongy.data%}
@@ -103,7 +107,7 @@
                                 {%else%}
                                 <input type="checkbox" id="toidongy1" name="toidongy" required oninvalid="setCustomValidity('Bạn phải đồng ý với điều khoản này')" onchange="setCustomValidity('')"/>
                                 {%endif%}
-                                Bằng cách nhấp vào "Đăng Ký Ngay" Quý khách đồng ý với điều khoản của ngân hàng Standard Chartered.</p>
+                                Bằng cách nhấp vào "Đăng Ký Ngay" Quý khách đồng ý với điều khoản của ngân hàng EPTI.</p>
                             <button type="submit" value="Register Now" class='btn submit sub-form' name="submit">Đăng ký ngay</button>
                         </form>
 
@@ -379,9 +383,48 @@
                 <p><a href="#top"><button type="submit" value="Register Now" class="btn submit sub-form" name="submit" style=" background: #ffc900; margin: 15px auto; border-radius: 5px; width: 230px; box-shadow: 0 3px 0 #d37f00;">nhận tư vấn ngay</button></a></p>
                 <div class="clr"></div>
             </div>
+
+            <img class="img-gioithieu" src="{{url_for('static', filename='images/t-bg.png')}}"  alt="#">
+            <div >
+                        <div class="sec-title">
+                            <h3> Câu hỏi thường gặp</h3>
+                        </div>
+
+                    <div class="">
+                        <div class="panel panel-primary">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">Khi nào thì tôi được PTI bồi thường? Và sẽ thông báo cho ai khi cần?</h3>
+                                <span class="pull-right clickable panel-collapsed"><i class="glyphicon glyphicon-chevron-down"></i></span>
+                            </div>
+                            <div class="panel-body" style="display: none;">PTI chi trả bảo hiểm khi khách hàng mắc bệnh lần đầu tiên 1 trong những bệnh hiểm nghèo có ghi trong Hợp đồng bảo hiểm. Khi phát hiện căn bệnh, khách hành sẽ gọi đến Insmart (04 3772 8106 - 08 39290256) hoặc Hotline PTI - 1900 545475 để được hướng dẫn chi tiết hơn.</div>
+                        </div>
+
+                        <div class="panel panel-primary">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">Khi tham gia bảo hiểm bệnh hiểm nghèo tôi có phải đi khám bệnh trước đó không? Hoặc yêu cầu gửi hồ sơ bác sĩ</h3>
+                                <span class="pull-right clickable panel-collapsed"><i class="glyphicon glyphicon-chevron-down"></i></span>
+                            </div>
+                            <div class="panel-body" style="display: none;">KH không cần đi khám bênh trước khi tham gia bảo hiểm bệnh hiểm nghèo tại PTI</div>
+                        </div>
+
+                        <div class="panel panel-primary">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">Thời gian tôi nhận được tiền bồi thường là bao nhiêu lâu?</h3>
+                                <span class="pull-right clickable panel-collapsed"><i class="glyphicon glyphicon-chevron-down"></i></span>
+                            </div>
+                            <div class="panel-body" style="display: none;">Sau 30 ngày chờ từ khi có kết luận của Bác sĩ</div>
+                        </div>
+                    </div>
+                </div>
+
             <footer class="main-wrapper footer">
                 <div class="container bottom">
-                    <div class="fl copyright"><span style="text-transform:none;">Conpyright</span> (C) 2016 ACCESSTRADE &amp; EPTI</div>
+                    <div class="fl copyright">
+                        <p><strong>Tổng Công Ty Bảo Hiểm Bưu Điện – PTI</strong></p>
+                        <p>Website: <a href="https://www.pti.vn/">www.pti.com.vn</a></p>
+                        <p>Bảo hiểm TRỰC TUYẾN: <a href="https://www.epti.vn/">www.epti.vn</a></p>
+                        <p>Hotline: <strong>1900 54 54 75</strong></p>
+                        </div>
                     <nav>
                         <ul style="margin:0px;">
                             <li class="firstItem">
@@ -506,6 +549,20 @@
                       this.value = this.value.toLowerCase();
                     });
               });
+
+            $(document).on('click', '.panel-heading span.clickable', function(e){
+                var $this = $(this);
+                if(!$this.hasClass('panel-collapsed')) {
+                    $this.parents('.panel').find('.panel-body').slideUp();
+                    $this.addClass('panel-collapsed');
+                    $this.find('i').removeClass('glyphicon-chevron-up').addClass('glyphicon-chevron-down');
+                } else {
+                    $this.parents('.panel').find('.panel-body').slideDown();
+                    $this.removeClass('panel-collapsed');
+                    $this.find('i').removeClass('glyphicon-chevron-down').addClass('glyphicon-chevron-up');
+                }
+            })
+
         </script>
 
         <script>
