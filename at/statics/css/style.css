@@ -225,3 +225,7 @@ input[type="text"], input[type="password"], input[type="tel"], input[type="numbe
 .sub-form{
     text-align: center;
 }
+
+.copyright a {
+    color: #0284c4;
+}
