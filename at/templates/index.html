@@ -105,7 +105,7 @@
                                 {%else%}
                                 <input type="checkbox" id="toidongy1" name="toidongy" required oninvalid="setCustomValidity('Bạn phải đồng ý với điều khoản này')" onchange="setCustomValidity('')"/>
                                 {%endif%}
-                                Bằng cách nhấp vào "Đăng Ký Ngay" Quý khách đồng ý với điều khoản của ngân hàng EPTI.</p>
+                                Bằng cách nhấp vào "Đăng Ký Ngay" Quý khách đồng ý với điều khoản của Tổng công ty cổ phần Bảo hiểm Bưu điện – PTI.</p>
                             <button type="submit" value="Register Now" class='btn submit sub-form' name="submit">Đăng ký ngay</button>
                         </form>
 
@@ -113,28 +113,24 @@
                 </div>
                 <div class="clearfix"></div>
             </div>
-
         </div>
-        <!--<img class="img-banner" src="images/slider.png"  alt="#">-->
 
         <div class="container">
-            <!--<img class="img-gioithieu" src="images/gioithieu-bg.png"  alt="#">-->
-            <div class="row" id="target_gioi_thieu">
-                <div class="bg-tn" style="text-align:center; color: #fff; margin-top: 0px;">
+              <div class="row" id="target_gioi_thieu">
+                <div class="bg-tn" style="text-align:center; color: #fff; margin-top: 0px;padding-bottom: 20px;">
                     <div class="sec-title">
                         <h3 style="color: #fff;">
-                            <span>Giới thiệu</span>
-                            <!--<p>hàng trăm ngàn người mắc những bệnh hiểm nghèo</p>-->
+                            Mỗi năm ở Việt Nam có thêm hàng trăm ngàn người mắc những bệnh hiểm nghèo
                         </h3>
                         <h3 style="color: #fff;"> </h3>
                     </div>
-                    <p class="mo-ta-tin">Bằng cách nhấp vào "Đăng Ký Ngay" Quý khách đồng ý với điều khoản của ngân hàng EPTI. -> bỏ phần bôi vàng thay bằng: Tổng công ty cổ phần Bảo hiểm Bưu điện – PTI.</p>
-                    <p class="mo-ta-tin">Công ty đầu tiên cho ra mắt sản phẩm bệnh hiểm nghèo với 14 bệnh nan y (bao gồm cả Ung Thư Suy Thận; Liệt Các Chi; Đột Quỵ và Ngồi Máu Cơ Tim - > co chữ chuẩn “sản phẩm bệnh hiểm nghèo” cùng 1 dòng.</p>
-                    <p><a href="#top"><button type="submit" value="Register Now" class="btn submit sub-form" name="submit" style=" background: #ffc900; margin: 15px auto; border-radius: 5px; width: 230px; box-shadow: 0 3px 0 #d37f00;">Nhận tư vấn ngay</button></a></p>
+                    <p class="mo-ta-tin">...như ung thư, đột quỵ, suy thận .. Những căn bệnh này đã trở nên phổ biến hơn và có thể xảy ra với bất kỳ ai. Ngày nay, với tiến bộ của y khoa và phương pháp điều trị, bệnh hiểm nghèo thật sự không phải là dấu chấm hết. Nếu được phát hiện sớm, nhiều người mắc bệnh hoàn toàn có thể hy vọng hồi phục và trở lại cuộc sống bình thường.</p>
+                    <p class="mo-ta-tin">Bảo hiểm bệnh hiểm nghèo của Tổng công ty cổ phần Bảo hiểm Bưu điện là sản phẩm bảo hiểm ĐẦU TIÊN tại thị trường bảo hiểm phi nhân thọ ở Việt Nam. Tham gia bảo hiểm bệnh hiểm nghèo của PTI, khách hàng sẽ được cung cấp nguồn tài chính kịp thời cho quá trình điều trị và đảm bảo kế hoạch tài chính cho bản thân và gia đình.</p>
+
                     <div class="clr"></div>
                 </div>
-
             </div>
+
             <div class="row text-center gioithieu" id="target_loi_ich">
                 <div class="col-md-2">
                     <img alt="" src="{{url_for('static', filename='images/icon1.png')}}">
@@ -229,89 +225,21 @@
             </div>
 
             <img class="img-gioithieu" src="{{url_for('static', filename='images/t-bg.png')}}"  alt="#">
-            <div class="sec-title has-bg" id="target_bao_hiem">
-                <h3>Phí bảo hiểm</h3>
-            </div>
-            <div class="info2 table_phi">
-                <p class="text-bao-hiem">Phí Bảo hiểm sẽ phụ thuộc vào độ tuổi của người tham gia bảo hiểm và giá trị bảo hiểm mà quý khách lựa chọn Chi tiết mức phí bảo hiểm quý khách có thể kiểm tra <strong>tại đây</strong></p>
-                <div style="border: 1px solid #666666;">
-                    <table>
-                        <tbody>
 
-                        </tbody></table>
-                </div>
-                <div class="panel panel-default text-center" style="border: 1px solid #666666;    border-radius: 0;">
-                    <!-- Table -->
-                    <table class="table">
-                        <tr>
-                            <th>Độ tuổi</th>
-                            <th>Mức bảo hiểm 110 triệu</th>
-                            <th>Mức bảo hiểm 220 triệu</th>
-                            <th>Mức bảo hiểm 330 triệu</th>
-                        </tr>
-                        <tr>
-                            <td>01-18</td>
-                            <td>150,000</td>
-                            <td>290,000</td>
-                            <td>450,000</td>
-                        </tr>
-                        <tr>
-                            <td>19 - 25</td>
-                            <td>200,000</td>
-                            <td>390,000</td>
-                            <td>600,000</td>
-                        </tr>
-                        <tr>
-                            <td>26 - 30</td>
-                            <td>260,000</td>
-                            <td>510,000</td>
-                            <td>750,000</td>
-                        </tr>
-                        <tr>
-                            <td>31 - 35</td>
-                            <td>390,000</td>
-                            <td>760,000</td>
-                            <td>1,200,000</td>
-                        </tr>
-                        <tr>
-                            <td>36 - 40</td>
-                            <td>600,000</td>
-                            <td>1,200,000</td>
-                            <td>1,800,000</td>
-                        </tr>
-                        <tr>
-                            <td>41 - 45</td>
-                            <td>860,000</td>
-                            <td>1,700,000</td>
-                            <td>2,700,000</td>
-                        </tr>
-                        <tr>
-                            <td>46 - 50</td>
-                            <td>1,100,000</td>
-                            <td>2,200,000</td>
-                            <td>3,500,000</td>
-                        </tr>
-                        <tr>
-                            <td>51 - 55</td>
-                            <td>1,500,000</td>
-                            <td>3,000,000</td>
-                            <td>4,650,000</td>
-                        </tr>
-                        <tr>
-                            <td>55 - 60</td>
-                            <td>2,000,000</td>
-                            <td>4,000,000</td>
-                            <td>6,100,000</td>
-                        </tr>
-                        <tr>
-                            <td>61 - 65</td>
-                            <td>2,800,000</td>
-                            <td>5,500,000</td>
-                            <td>8,000,000</td>
-                        </tr>
-                    </table>
-                </div>
+            <div class="row" style="margin-top:0px;">
+                <div class="col-md-8">
+                    <div class="sec-title has-bg" id="target_bao_hiem">
+                        <h3>Phí bảo hiểm</h3>
+                    </div>
+                    <p>Phí Bảo hiểm sẽ phụ thuộc vào độ tuổi của người tham gia bảo hiểm và giá trị bảo hiểm mà quý khách lựa chọn Chi tiết mức phí bảo hiểm quý khách có thể kiểm tra <strong><a class="box inline" href="#inline_content4">tại đây</a></strong></p>
+                    <p><a href="#top"><button type="submit" value="Register Now" class="btn submit sub-form" name="submit" style=" background: #ffc900; margin: 15px auto; border-radius: 5px; width: 230px; box-shadow: 0 3px 0 #d37f00;">nhận tư vấn ngay</button></a></p>
+                <div class="clr"></div>
+               </div>
+               <div class="col-md-4" style="margin-top:20px;">
+                    <img src="/statics/images/phi-bao-hiem.png" alt="">
+               </div>
             </div>
+
             <img class="img-gioithieu" src="{{url_for('static', filename='images/t-bg.png')}}"  alt="#">
             <div class="sec-title has-bg" id="target_thong_tin">
                 <h3>Thông tin cần biết</h3>
@@ -330,14 +258,10 @@
                     <div class="item active">
                         <img src="{{url_for('static', filename='images/img4.png')}}" alt="Chania">
                         <div class="carousel-caption">
-                            <h3>Quy tắc bảo hiểm</h3>
-                            <p><strong>Công ty bảo hiểm:</strong> là Tổng công ty
-                                Cổ phần Bảo hiểm Bưu điện và các
-                                Công ty thành viên, sau đây gọi tắt là
-                                PTI.</p>
-                            <p>
-                                <a  href="https://www.epti.vn/upload/Sanpham/QuyTac-BH%20BenhHiemNgheo%20(2).pdf" target="_blank">
-                                    <button type="submit" value="Register Now" class="btn submit sub-form" name="submit" style=" background: #ffc900; border-radius: 5px; width: 230px; box-shadow: 0 3px 0 #d37f00;">xem chi tiết</button>
+
+                            <p><strong style="font-size:15px;">Quy tắc bảo hiểm</strong>. &nbsp;
+                                <a  href="https://www.epti.vn/upload/Sanpham/QuyTac-BH%20BenhHiemNgheo%20(2).pdf" target="_blank" style="color: #0099FF;">
+                                   xem chi tiết
                                 </a>
                             </p>
                         </div>
@@ -346,13 +270,9 @@
                     <div class="item">
                         <img src="{{url_for('static', filename='images/img5.png')}}" alt="Chania">
                         <div class="carousel-caption">
-                            <h3>Giấy yêu cầu bảo hiểm</h3>
-                            <p><strong>Lịch sử tham gia bảo hiểm:</strong> trước đây, bạn đã bao giờ bị một công ty bảo hiểm từ chối, trì hoãn, hủy hợp đồng, hoặc chấp nhận bảo hiểm nhưng có
-                                điểm loại trừ riêng hoặc phí bảo hiểm phải đóng cao hơn phí tiêu chuẩn hoặc phải thay đổi quyền lợi hoặc đã tham gia chương trình bảo hiểm tương
-                                tự và được bồi thường?</p>
-                            <p>
-                                <a  href="https://www.epti.vn/upload/Sanpham/Giay%20YCBH-benhhiemngheo.pdf" target="_blank">
-                                    <button type="submit" value="Register Now" class="btn submit sub-form" name="submit" style=" background: #ffc900; border-radius: 5px; width: 230px; box-shadow: 0 3px 0 #d37f00;">xem chi tiết</button>
+                            <p><strong style="font-size:15px;">Giấy yêu cầu bảo hiểm</strong>. &nbsp;
+                                <a  href="https://www.epti.vn/upload/Sanpham/Giay%20YCBH-benhhiemngheo.pdf" target="_blank" style="color: #0099FF;">
+                                    xem chi tiết
                                 </a>
                             </p>
                         </div>
@@ -361,38 +281,12 @@
                     <div class="item">
                         <img src="{{url_for('static', filename='images/img6.png')}}" alt="Flower">
                         <div class="carousel-caption">
-                            <h3>Quyền lợi bảo hiểm</h3>
                             <p>
-                                <strong>Lợi ích của Người được bảo hiểm khi tham gia sản phấm Bảo hiểm bệnh hiểm nghèo:</strong>
-                                <br>Cung cấp nguồn tài chính kiph thời cho quá trình điều trị
-                                <br>Đảm bảo kế hoạch tài chính cho bản thân và gia đình
-                            </p>
-                            <p>
-                                <a  href="https://www.epti.vn/upload/Sanpham/QuyenLoiBaoHiem.rar">
-                                    <button type="submit" value="Register Now" class="btn submit sub-form" name="submit" style=" background: #ffc900; border-radius: 5px; width: 230px; box-shadow: 0 3px 0 #d37f00;">xem chi tiết</button>
-                                </a>
+                                <strong style="font-size:15px;">Quyền lợi bảo hiểm</strong>. &nbsp;<a href="https://www.epti.vn/upload/Sanpham/QuyenLoiBaoHiem.rar" target="_blank" style="color: #0099FF;">xem chi tiết</a>
                             </p>
                         </div>
                     </div>
-
                 </div>
-
-            </div>
-
-            <div>
-                <div class="sec-title">
-                    <h3 style="">
-                        MỖI NĂM Ở VIỆT NAM CÓ THÊM HÀNG TRĂM NGÀN NGƯỜI MẮC NHỮNG BỆNH HIỂM NGHÈO
-                    </h3>
-                </div>
-
-                <p>...như ung thư, đột quỵ, suy thận .. Những căn bệnh này đã trở nên phổ biến hơn và có thể xảy ra với bất kỳ ai. Ngày nay, với tiến bộ của y khoa và phương pháp điều trị, bệnh hiểm nghèo thật sự không phải là dấu chấm hết. Nếu được phát hiện sớm, nhiều người mắc bệnh hoàn toàn có thể hy vọng hồi phục và trở lại cuộc sống bình thường.
-                </p>
-                <p>Bảo hiểm bệnh hiểm nghèo của Tổng công ty cổ phần Bảo hiểm Bưu điện là sản phẩm bảo hiểm ĐẦU TIÊN tại thị trường bảo hiểm phi nhân thọ ở Việt Nam. Tham gia bảo hiểm bệnh hiểm nghèo của PTI, khách hàng sẽ được cung cấp nguồn tài chính kịp thời cho quá trình điều trị và đảm bảo kế hoạch tài chính cho bản thân và gia đình.
-</p>
-
-                <p><a href="#top"><button type="submit" value="Register Now" class="btn submit sub-form" name="submit" style=" background: #ffc900; margin: 15px auto; border-radius: 5px; width: 230px; box-shadow: 0 3px 0 #d37f00;">nhận tư vấn ngay</button></a></p>
-                <div class="clr"></div>
             </div>
 
             <img class="img-gioithieu" src="{{url_for('static', filename='images/t-bg.png')}}"  alt="#">
@@ -434,8 +328,8 @@
                         <p><strong>Tổng Công ty Cổ phần Bảo hiểm Bưu điện - PTI</strong></p>
                         <p>Tầng 8 toà nhà Harec &ndash; 4A Láng Hạ, Ba Đình, Hà Nội</p>
                         <p>Website: <a href="https://www.epti.vn">www.epti.vn &ndash; www.pti.com.vn</a></p>
-                        <p>Fanpage: <a href="www.facebook.com/Bao.Hiem.Truc.Tuyen.PTI">www.facebook.com/Bao.Hiem.Truc.Tuyen.PTI</a></p>
-                        <p>Youtube: <a href="www.youtube.com/channel/UCn6RoUGGaZFevhoFnEMoRCg">www.youtube.com/channel/UCn6RoUGGaZFevhoFnEMoRCg</a></p>
+                        <p>Fanpage: <a href="www.facebook.com/Bao.Hiem.Truc.Tuyen.PTI">www.facebook.com/PTI</a></p>
+                        <p>Youtube: <a href="www.youtube.com/channel/UCn6RoUGGaZFevhoFnEMoRCg">www.youtube.com/PTI</a></p>
                         <p><strong>Call Center:</strong> 1900 454575</p>
                         <p><strong>Hotline:</strong> 08 7304 567804 7300 5678</p>
                         <p><strong>Điện thoại:</strong>&nbsp;(+844) 3772 4466</p>
@@ -460,7 +354,7 @@
                 <div style='display:none'>
                     <div id='inline_content1' style='padding:10px; background:#fff;'>
                         <h3 style="text-align:center; "><strong>Các bệnh hiểm nghèo được bảo hiểm</strong></h3>
-                        <img src="{{url_for('static', filename='images/t-bg.png')}}" alt="#">
+                        <img src="{{url_for('static', filename='images/t-bg.png')}}" alt="#" style="width: 100%;">
                         <p>
                             <br>1 : Nhồi máu cơ tim lần đầu
                             <br>2 : Đột quỵ
@@ -487,7 +381,7 @@
                 <div style='display:none'>
                     <div id='inline_content2' style='padding:10px; background:#fff;'>
                         <h3 style="text-align:center; "><strong>Số tiền được bảo hiểm</strong></h3>
-                        <img src="{{url_for('static', filename='images/t-bg.png')}}" alt="#">
+                        <img src="{{url_for('static', filename='images/t-bg.png')}}" alt="#" style="width: 100%;">
                         <p>
                             <br>Lựa chọn 1: 110,000,000 VND/ người/ năm
                             <br>Lựa chọn 2: 220,000,000 VND/ người/ năm
@@ -499,7 +393,7 @@
                 <div style='display:none'>
                     <div id='inline_content3' style='padding:10px; background:#fff;'>
                         <h3 style="text-align:center; "><strong>Phạm vi bảo hiểm</strong></h3>
-                        <img src="{{url_for('static', filename='images/t-bg.png')}}" alt="#">
+                        <img src="{{url_for('static', filename='images/t-bg.png')}}" alt="#" style="width: 100%;">
                         <br>
                         <p>
                             <br>Trường hợp Người được bảo hiểm mắc phải bệnh hiểm nghèo trong thời hạn bảo hiểm, PTI sẽ chi trả toàn bộ số tiền bảo hiểm được nêu cụ thể trong Hợp đồng với điều kiện sau:
@@ -509,6 +403,86 @@
                         </p>
                     </div>
                 </div>
+
+                <div style='display:none'>
+                    <div id='inline_content4' style='padding:10px; background:#fff;'>
+                        <h3 style="text-align:center; "><strong>Phí bảo hiểm</strong></h3>
+                        <img src="{{url_for('static', filename='images/t-bg.png')}}" alt="#" style="width: 100%;">
+                        <br>
+                         <div class="panel panel-default text-center" style="border: 1px solid #666666;border-radius: 0;">
+                            <!-- Table -->
+                            <table class="table">
+                                <tr>
+                                    <th>Độ tuổi</th>
+                                    <th>Mức bảo hiểm 110 triệu</th>
+                                    <th>Mức bảo hiểm 220 triệu</th>
+                                    <th>Mức bảo hiểm 330 triệu</th>
+                                </tr>
+                                <tr>
+                                    <td>01-18</td>
+                                    <td>150,000</td>
+                                    <td>290,000</td>
+                                    <td>450,000</td>
+                                </tr>
+                                <tr>
+                                    <td>19 - 25</td>
+                                    <td>200,000</td>
+                                    <td>390,000</td>
+                                    <td>600,000</td>
+                                </tr>
+                                <tr>
+                                    <td>26 - 30</td>
+                                    <td>260,000</td>
+                                    <td>510,000</td>
+                                    <td>750,000</td>
+                                </tr>
+                                <tr>
+                                    <td>31 - 35</td>
+                                    <td>390,000</td>
+                                    <td>760,000</td>
+                                    <td>1,200,000</td>
+                                </tr>
+                                <tr>
+                                    <td>36 - 40</td>
+                                    <td>600,000</td>
+                                    <td>1,200,000</td>
+                                    <td>1,800,000</td>
+                                </tr>
+                                <tr>
+                                    <td>41 - 45</td>
+                                    <td>860,000</td>
+                                    <td>1,700,000</td>
+                                    <td>2,700,000</td>
+                                </tr>
+                                <tr>
+                                    <td>46 - 50</td>
+                                    <td>1,100,000</td>
+                                    <td>2,200,000</td>
+                                    <td>3,500,000</td>
+                                </tr>
+                                <tr>
+                                    <td>51 - 55</td>
+                                    <td>1,500,000</td>
+                                    <td>3,000,000</td>
+                                    <td>4,650,000</td>
+                                </tr>
+                                <tr>
+                                    <td>55 - 60</td>
+                                    <td>2,000,000</td>
+                                    <td>4,000,000</td>
+                                    <td>6,100,000</td>
+                                </tr>
+                                <tr>
+                                    <td>61 - 65</td>
+                                    <td>2,800,000</td>
+                                    <td>5,500,000</td>
+                                    <td>8,000,000</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
 
             </footer>
 
@@ -583,7 +557,7 @@
         </script>
 
         <script>
-            $(".inline").colorbox({inline:true, width:"50%"});
+            $(".inline").colorbox({inline:true, width:"95%"});
         </script>
     </body>
 
